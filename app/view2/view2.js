@@ -9,6 +9,9 @@ angular.module('myApp.view2', ['ngRoute'])
   });
 }])
 
-.controller('View2Ctrl', [function() {
-
+.controller('View2Ctrl', ['$scope', '$auth',function($scope, $auth) {
+    if ($auth.validateUser){
+        console.log('yesss');
+        $scope.result = 'behzad';
+    }
 }]);

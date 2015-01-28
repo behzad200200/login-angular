@@ -9,6 +9,17 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', ['$auth',function($scope, $auth) {
+        $scope.registrationLogin = {};
+        $scope.submitRegistration = function(registrationLogin){
+            console.log("test");
+            $auth.submitLogin(registrationLogin)
+                .then(function (res){
+                    console.log("yessss")
+                })
+                .catch(function (res) {
+                    console.log(res.data)
+                })
+        }
 
 }]);
