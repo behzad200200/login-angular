@@ -10,8 +10,11 @@ angular.module('myApp.view2', ['ngRoute'])
 }])
 
 .controller('View2Ctrl', ['$scope', '$auth',function($scope, $auth) {
-    if ($auth.validateUser){
-        console.log('yesss');
-        $scope.result = 'behzad';
-    }
+    $auth.validateUser()
+        .then(function(){
+            console.log('behzad');
+        })
+        .catch(function(){
+            console.log('no');
+        })
 }]);

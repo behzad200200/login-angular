@@ -8,10 +8,10 @@ angular.module('myApp.login', ['ngRoute'])
         })
     }])
     .controller('loginController',['$auth', '$scope', function($auth, $scope){
-        $scope.credential = {};
+        $scope.credentials = {};
         $scope.msg = "behzad";
-        $scope.submitLogin = function(credential){
-            $auth.submitLogin(credential)
+        $scope.submitLogin = function(credentials){
+            $auth.submitLogin(credentials)
                 .then(function(res){
 
                 })

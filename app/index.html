@@ -14,18 +14,12 @@
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body ng-controller="ApplicationController">
 <div id="wrap">
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <p>this the thing that I always wanted to do in my dream.</p>
-      </div>
-    </div>
-  </div>
+  <mondo-header></mondo-header>
   <div ng-view></div>
   <mondo-footer></mondo-footer>
-
+</div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -39,6 +33,7 @@
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="directivies/footer-directive.js"></script>
+  <script src="directivies/header-directive.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

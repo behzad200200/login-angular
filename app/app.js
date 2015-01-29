@@ -17,3 +17,10 @@ angular.module('myApp', [
             apiUrl: 'http://127.0.0.1:3000'
         })
     })
+    .controller('ApplicationController', ['$rootScope', function($rootScope){
+        $rootScope.currentUser = null;
+        console.log('application');
+        $rootScope.$on('auth:login-success', function(ev, user){
+            $rootScope.currentUser = user
+        })
+    }])
