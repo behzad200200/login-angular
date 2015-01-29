@@ -1,0 +1,9 @@
+<form ng-submit="submitLogin(credential)">
+    <label for="login-username">Username</label>
+    <input id="login-username" type="text" ng-model="credential.username">
+    <label for="login-password">Password</label>
+    <input id="login-password" type="password" ng-model="credential.password">
+    <button type="submit">Submit</button>
+</form>
+
+<p>{{msg}}</p>
