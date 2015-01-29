@@ -11,7 +11,6 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', ['$scope', '$auth',function($scope, $auth) {
         $scope.registrationLogin = {};
-        console.log('djflsdkjfs');
         $scope.register = function(registrationLogin){
             $auth.submitRegistration(registrationLogin)
                 .then(function (res){
