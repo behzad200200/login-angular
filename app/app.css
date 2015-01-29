@@ -6,6 +6,78 @@
   margin-bottom: 2em;
   padding: 0 0 0.5em;
 }
+.footer{
+  background-color: #040F22;
+  bottom: 0;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+}
+
+.container.login{
+  background-color: #000066;
+  height: 100%
+}
+html, body {
+  height: 100%;
+}
+#wrap {
+  height: auto !important;
+  margin: 0 auto -60px;
+  min-height: 100%;
+}
+#push, #footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+.navbar-inner{
+  background-color: #000; /* background color will be black for all browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+#wrap > .container {
+  padding-top: 60px;
+  width: 100%;
+  height: 100%;
+}
+.login{
+  background-color: #053B65;
+}
+.full-page{
+  padding-bottom: 60px;
+  padding-top: 60px;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+.container .credit {
+  margin: 20px 0;
+}
+code {
+  font-size: 80%;
+}
+
+.footer a{
+  color: #ffffff;
+}
+
+.footer p{
+  color: #ffffff;
+}
+
+.center-text{
+  text-align: center;
+}
+.inner {
+  width: 50%;
+  margin: 0 auto;
+}
+
 
 .menu:before {
   content: "[";
@@ -27,4 +99,8 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+.login-block{
+  background-color: #F4F4F4;
+  padding: 20px 20px 20px 20px;
 }
