@@ -1,7 +1,13 @@
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <p>{{currentUser.email}}</p>
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top" >
+    <div class="navbar-header">
+        <a href="#" class="navbar-brand">Project name</a>
+        {{currentUser}}
     </div>
-</div>
+    <a class="navbar-brand" href="#">Brand</a>
+        <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
+            <li><a ng-if="!isLogin()"  go-click="/login">Login</a></li>
+            <li><a ng-if="!isLogin()" go-click="/view1">Sign Up</a></li>
+            <li><a ng-if="isLogin()" ng-click="logout()" href="">Logout</a></li>
+        </ul>
+    </div>
+</nav>

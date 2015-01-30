@@ -17,7 +17,9 @@
 <body ng-controller="ApplicationController">
 <div id="wrap">
   <mondo-header></mondo-header>
-  <div ng-view></div>
+    <div class="full-page" set-background-color="">
+        <div ng-view class="view-container"></div>
+    </div>
   <mondo-footer></mondo-footer>
 </div>
   <!-- In production use:
