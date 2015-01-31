@@ -7,16 +7,16 @@ angular.module('myApp.login', ['ngRoute'])
             controller: 'loginController'
         })
     }])
-    .controller('loginController',['$auth', '$scope', function($auth, $scope){
+    .controller('loginController',['$auth', '$scope', '$location', function($auth, $scope, $location){
         $scope.credentials = {};
-        $scope.msg = "behzad";
+        $scope.errors = {};
         $scope.submitLogin = function(credentials){
             $auth.submitLogin(credentials)
                 .then(function(res){
-
+                    $location.path('/view2')
                 })
                 .catch(function(res){
-
+                    $scope.errors = res.errors
                 })
 
         }

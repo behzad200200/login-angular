@@ -1,5 +1,8 @@
 <div class="container fill">
     <div class="col-sm-4 col-sm-offset-4">
+        <div class="error" ng-repeat="error in errors">
+            <p>{{error}}</p>
+        </div>
         <div class="login-block">
             <h3 class="center-text">Login</h3>
             <form ng-submit="submitLogin(credentials)" role="form">

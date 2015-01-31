@@ -18,16 +18,8 @@ angular.module('myApp', [
         })
     })
     .controller('ApplicationController', ['$rootScope','$auth', function($rootScope, $auth){
-        $rootScope.currentUser = null;
-
-        $rootScope.$on('auth:login-success', function(ev, user){
-            $rootScope.currentUser = user;
-        });
-        $rootScope.$on('auth:validation-success', function(){
-            console.log('behzad');
-        })
         $rootScope.isLogin = function(){
-            if($rootScope.currentUser != null && $rootScope.currentUser != undefined ){
+            if($rootScope.user.length > 0){
                 return true
             }else{
                 return false
